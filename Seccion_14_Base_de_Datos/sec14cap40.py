@@ -1,9 +1,13 @@
 #SQLite - Sistema de gestión de base de datos relacionales 
 
 import sqlite3
+datadir = './Seccion 14 Base de Datos'
+datafile = 'basededatos1.db'
+db = datadir+ ' ' +datafile
 
-conn = sqlite3.connect("basededatos1.db")
+conn = sqlite3.connect(db)
 cursor = conn.cursor()
+
 #Sec14cap41 Crear Tabla en Base de datos
 def sec14cap41():
 #Te conectas primero con la sintaxis del capitulo anterior(la de arriba)
@@ -11,7 +15,7 @@ def sec14cap41():
 	cursor.execute("CREATE TABLE PERSONAS (nombre TEXT,apellido1 TEXT, apellido2 TEXT, edad INTERGER)")
 	conn.commit() #Esa sentencia que hemos creado a funcionado y queremos que funcione siempre
 	conn.close()
-#sec14cap41()
+sec14cap41()
 
 #Sec14cap42 Insertar Fila 
 def sec14cap42():
@@ -68,10 +72,11 @@ def sec14cap47():
 
 #sec14cap48 Actualizar Datos
 def sec14cap48():
-	cursor.execute("UPDATE PERSONAS SET edad = 20 WHERE nombre = 'Christian'")
+	cursor.execute("UPDATE PERSONAS SET edad = 40 WHERE nombre = 'Christian'")
 
 	conn.commit()
 	conn.close()	
-sec14cap48()
+#sec14cap48()
+
 
 

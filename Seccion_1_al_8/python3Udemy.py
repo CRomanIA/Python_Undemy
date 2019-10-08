@@ -320,7 +320,6 @@ def sec5cap15():
 #sec5cap16 Operadores de identidad (is, is not)
 def sec5cap16():
 	frutas1 = ["Manzana", "Pera"]
-	frutas2 = ["Manzana", "Pera"]
 	frutas3 = frutas1
 	# condicion is
 	cond1 = frutas3 is frutas1
@@ -560,14 +559,14 @@ def sec8cap25():
 #sec8cap25()
 
 #sec8cap26 Funciones
-def sec8cap27():
+def sec8cap26():
 	def saludar():
 		print("Buenos Dias")
-	saludar()
-	def saludar(nombre):
+		saludar()
+	def saludar2(nombre):
 		print("Buenos dias " + nombre)
-	nombre = "Antonio"
-	saludar(nombre)
+		nombre = "Antonio"
+		saludar2(nombre)
 	def sumar(numero1,numero2):
 		suma = numero1+numero2
 		return suma
