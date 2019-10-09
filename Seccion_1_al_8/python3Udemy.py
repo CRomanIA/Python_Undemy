@@ -573,7 +573,7 @@ def sec8cap26():
 	numero1 = 5
 	numero2 = 3
 	resultado = sumar(numero1, numero2)
-	print (resultado)
+	print(resultado)
 
 	#Paso de valor por referencia
 	colores = ["rojo","verde","azul"]
@@ -581,7 +581,7 @@ def sec8cap26():
 		colores.append(color)
 	color = "negro"
 	incluir_color(colores,color)
-	print (colores)
+	print(colores)
 #sec8cap26()
 
 #sec8cap27 lamda 
