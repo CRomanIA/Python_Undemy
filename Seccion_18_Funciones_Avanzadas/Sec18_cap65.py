@@ -2,7 +2,7 @@
 ##Funciones Generadoras - Genera valores sobre la marcha
 
 #range
-
+"""
 def sec18cap65():
     range(0, 11)
 
@@ -20,7 +20,7 @@ def sec18cap65():
         print(numero)     
 #sec18cap65()            
 
-
+#Funcion Filter - 
 def sec18cap66():
     def positivo(numero):
         if(numero > 0):
@@ -34,4 +34,28 @@ def sec18cap66():
     filtro = filter(positivo, numeros)
     result = list(filtro)
     print(result)
-sec18cap66()   
+#sec18cap66()   
+"""
+
+#Funcion Map
+def multiplicar(numero):
+    return numero * 2
+
+print(multiplicar(2))
+
+numeros = [2,4,6]
+
+mapping = map(multiplicar, numeros)
+print(mapping)
+
+resultado = list(mapping)
+
+print(resultado)
+#TODO: Todo eso, en una línea de codigo xd
+lista_resultado = list(map(multiplicar, numeros))
+print(lista_resultado)
+#Utilizando funcion lamba: donde asigna una variable vacía y le da como contenido ella misma X4
+
+lista_resultado2 = list(map(lambda numero: numero * 4, numeros))
+
+print(lista_resultado2)
