@@ -1,4 +1,5 @@
-#Librerias Numpy TODO: Es importante esto
+#Librerias Numpy 
+#TODO: Es importante esto, para instalar la libreria debes en terminal ingresar pip install numpy
 import numpy as np
 
 #arrays con condicion cero(donde toma 4 valores)
@@ -35,4 +36,3 @@ print(array_doble)
 #ver forma que tiene el array
 print(array_doble.shape)
 print(array_doble.dtype)
-
